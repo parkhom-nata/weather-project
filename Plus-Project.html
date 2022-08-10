@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <title>Plus - Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4">
+          <h1 id="city">KYIV</h1>
+          <h2>Monday 11:29</h2>
+        </div>
+        <div class="col-4 city">
+          <form id="search-form">
+            <input
+              type="text"
+              class="form"
+              id="city-input"
+              autocomplete="off"
+              autofocus="on"
+              placeholder="Enter city"
+            />
+            <input type="submit" class="button" value="Go" />
+          </form>
+          <button id="current-location-btn">Current</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="card today" style="width: 14rem;">
+        <img src="images/sun.png" class="card-img-top" alt="sun" />
+        <div class="card-body">
+          <p class="card-text" id="current-temperature"<26><span>°<span></p>
+          <span class="metrics"
+            ><a href="#" id="C">°C</a> | <a href="#" id="F">°F</a></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="data">
+        <ul class = "other">
+        <li>Sky: <span id="sky"> 0</span></li>
+        <li>Humidity: <span id="humidity">62</span>%</li>
+        <li>Wind: <span id="wind">3</span>km/h</li>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-7">
+        <div class="card-group">
+          <div class="card">
+            <h1 class="card-title">Tue</h1>
+            <div class="week-icon">
+              <img src="images/clouded-sun.png" alt="clouded-sun" />
+            </div>
+            <div class="card-body">
+              <p class="group-card-text">27°</p>
+            </div>
+          </div>
+          <div class="card down">
+            <h1 class="card-title">Wed</h1>
+            <div class="week-icon">
+              <img src="images/sun.png" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="group-card-text">24°</p>
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Thu</h1>
+            <div class="week-icon">
+              <img src="images/cloud.png" alt="clouds" />
+            </div>
+            <div class="card-body">
+              <p class="group-card-text">21°</p>
+            </div>
+          </div>
+          <div class="card down">
+            <h1 class="card-title">Fri</h1>
+            <div class="week-icon">
+              <img src="images/sun.png" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="group-card-text">23°</p>
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Sat</h1>
+            <div class="week-icon">
+              <img src="images/thunderstorm1.png" alt="thunder" />
+            </div>
+            <div class="card-body">
+              <p class="group-card-text">28°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

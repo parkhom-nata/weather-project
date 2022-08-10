@@ -1,0 +1,110 @@
+body {
+  background-color: rgba(237, 243, 243, 0.178);
+}
+
+h2 {
+  color: rgba(7, 7, 7, 0.658);
+}
+.city {
+  display: block;
+  position: relative;
+  left: 400px;
+  top: 16px;
+}
+
+li {
+  list-style: none;
+  line-height: 1.5;
+}
+.form,
+.button,
+#current-location-btn {
+  border-radius: 6px;
+}
+
+.form {
+  padding: 6px;
+  width: 70%;
+  border: 1px solid #ced4da;
+  font-style: italic;
+}
+
+input:focus {
+  outline: 3px inset #43dee646;
+  font-style: normal;
+}
+
+.button {
+  width: 20%;
+  padding: 6px 0;
+  color: #297380;
+  font-weight: 600;
+  border: 1px solid #2973803a;
+  background-color: #2973807a;
+}
+
+#current-location-btn {
+  font-weight: 600;
+  padding: 6px 8px;
+  border: 1px solid #ff7e3349;
+  color: #fc7323;
+  background-color: #ffad339c;
+  position: relative;
+  right: -92%;
+  top: -37%;
+}
+.container {
+  padding: 20px 16px;
+}
+
+.data {
+  line-height: 7px;
+  font-weight: 450;
+  font-size: 1.1rem;
+  color: #70808d;
+}
+
+.card-text {
+  text-align: center;
+  color: rgb(207, 97, 83);
+  font-size: 38px;
+  font-weight: 450;
+}
+
+.metrics {
+  color: rgb(207, 97, 83);
+  font-size: 17px;
+  font-weight: 450;
+  position: relative;
+  right: 5%;
+}
+.card-group {
+  border-color: transparent;
+  margin: 10px 50px;
+  border-radius: 6px;
+  position: relative;
+  left: 65%;
+  top: -110%;
+}
+
+.card {
+  text-align: center;
+  color: #297380;
+  font-size: 32px;
+  font-weight: 450;
+  border-width: 0px;
+  box-shadow: 7px 6px 8px 6px #89c4ce;
+}
+
+.down {
+  display: block;
+  position: relative;
+  bottom: 30px;
+}
+
+.today {
+  border-color: transparent;
+  box-shadow: 7px 6px 8px 6px rgb(240, 191, 161);
+  display: block;
+  padding: 30px 30px 0 30px;
+}
