@@ -108,3 +108,7 @@ input:focus {
   display: block;
   padding: 30px 30px 0 30px;
 }
+
+.code {
+  padding: 0 120px;
+ }
