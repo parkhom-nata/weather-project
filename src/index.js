@@ -1,3 +1,4 @@
+///show current date & time:
 let currentTime = new Date();
 let h2 = document.querySelector("h2");
 let days = [
@@ -14,6 +15,7 @@ let currentHours = currentTime.getHours();
 let currentMinutes = currentTime.getMinutes();
 h2.innerHTML = `${currentDay} ${currentHours}:${currentMinutes}`;
 
+///show current temperature (°C/°F):
 function currentTempC(event) {
   event.preventDefault();
   let cardText = document.querySelector("#current-temperature");
@@ -30,6 +32,8 @@ function currentTempF(event) {
 let fahrenheit = document.querySelector("#F");
 fahrenheit.addEventListener("click", currentTempF);
 
+
+///weather details for today:
 function showWeather(response) {
   let city = document.querySelector("#city");
   city.innerHTML = response.data.name;
@@ -43,6 +47,7 @@ function showWeather(response) {
   wind.innerHTML = response.data.wind.speed;
 }
 
+///search weather by city:
 function search(city) {
   let apiKey = "2b5667a8237d1b01430707e2a1deb6dc";
   let units = "metric";
@@ -58,7 +63,7 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-////////
+///show current location:
 
 function showPosition(position) {
   let apiKey = "2b5667a8237d1b01430707e2a1deb6dc";
@@ -68,8 +73,6 @@ function showPosition(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showWeather);
 }
-navigator.geolocation.getCurrentPosition(showPosition);
-/////
 
 function getCurrentPosition(event) {
   event.preventDefault();
@@ -77,3 +80,5 @@ function getCurrentPosition(event) {
 }
 let currentCity = document.querySelector("#current-location-btn");
 currentCity.addEventListener("click", getCurrentPosition);
+
+search("Kyiv");
